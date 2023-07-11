@@ -1,5 +1,5 @@
 // AFFICHE LES PHOTOGRAPHES DANS LA PAGE INDEX
-function photographerFactory(data) {
+export default function photographerFactory(data) {
   const { name, portrait, city, country, tagline, price, id } = data;
 
   const picture = `assets/photographers/photographers_id_photos/${portrait}`;

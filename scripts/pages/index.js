@@ -1,10 +1,10 @@
-let pictures = [];
+import photographerFactory from "../templates/photographer.js";
 
 function getPhotographers() {
   fetch("data/photographers.json")
     .then((res) => res.json())
     .then((data) => {
-      const photographers = data.photographers;
+      const { photographers } = data;
 
       const photographersSection = document.querySelector(
         ".photographer_section"
